@@ -491,7 +491,9 @@ class MainWin(QWidget):
                     f"سعر الكيلوواط: {ppk}$ ⇒ قيمة الطاقة: {energy}$\n"
                     f"الإجمالي: {total}$\n"
                     f"{CURRENCY_NOTE}\n"
-                    f"يرجى التسديد قبل يوم {PAYMENT_DEADLINE_DAY} من الشهر. للاستفسار: {COMPANY_PHONE}"
+                    f"يرجى التسديد قبل يوم {PAYMENT_DEADLINE_DAY} من الشهر.\n"
+                    f"للاستفسار: \n"
+                    f"{COMPANY_PHONE}"
                 )
 
             df["MessageArabic"] = df.apply(build_msg, axis=1)
